@@ -1,0 +1,5 @@
+1.  O compilador ele traduz o codigo que é linguagem humana que seria o C++ para linguagem de maquina que seria um executavel, em suma ele é oq permite a maquina entender oq fizemos,
+    agora o codigo fonte é o que escrevemos numa linguagem como C++ e o executavel é como ele traduzido para rodar na maquina em binario.
+
+2.  As variaveis são oq recebe os dados/valores, ela é o que o programa pode receber ou ele já tem desde o inicio, como int para receber ou considerar ser inteiro, double para numero com virgula,
+    O "bool" seria aplicado em algo que só recebe dois valores como uma chamada aonde ou o aluno está ou não está, o valor Presente e Falta.
