@@ -1,0 +1,7 @@
+Por que, em C++ padrão, não podemos simplesmente declarar double notas[n];
+quando n é lido do teclado? Em qual região da memória (estática, stack ou heap) ficaria esse vetor,
+e qual região o seu programa usa?
+
+Resposta:
+Em C++ padrão as arrays precisam ter tamanho conecido em tempo de compilação, arrays de tamanho variavel não faz parte do c++ padrão
+se fosse usado ficaria na stack o meu usa o heap via malloc, pois o tamanho é decidido em tempo de execuçãi e o bloco vive até eu chamar free.

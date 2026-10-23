@@ -28,21 +28,34 @@ void fatorial(int n, vector<int> &resultado) {
 
 int main() {
   int n;
-  cout << "Digite um numero inteiro nao negativo: ";
-  cin >> n;
+  int Continuar = 1;
 
-  if (n < 0) {
-    cout << "Nao existe fatorial de numero negativo." << endl;
-    return 1;
-  }
-
-  vector<int> resultado;
-  fatorial(n, resultado);
-
-  cout << n << "! = ";
-  for (int i = (int)resultado.size() - 1; i >= 0; i--)
-    cout << resultado[i];
+  cout << "Calculadora fatorial";
   cout << endl;
 
-  return 0;
+  while (Continuar == 1) {
+    cout << "Digite um numero inteiro nao negativo: ";
+    cin >> n;
+
+    if (n < 0) {
+      cout << "Error Nao existe fatorial de numero negativo." << endl;
+      return 1;
+    }
+
+    vector<int> resultado;
+    fatorial(n, resultado);
+
+    cout << n << "! = ";
+    for (int i = (int)resultado.size() - 1; i >= 0; i--)
+      cout << resultado[i];
+    cout << endl;
+
+    cout << "Digite 1 para continuar e qualquer outro numero para terminar ";
+    cout << endl;
+    cin >> Continuar;
+  }
+  if (Continuar != 1) {
+
+    return 0;
+  }
 }

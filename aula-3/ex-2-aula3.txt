@@ -1,0 +1,4 @@
+ O `malloc` não zera a memória, então os contadores começariam com lixo e a apuração sairia errada. Para corrigir, é preciso zerar na mão com um laço `for` ou com `memset`.
+
+ O `calloc(quantidade, tamanho)` recebe os dois valores separados para fazer a multiplicação ele mesmo e detectar overflow. O `malloc` só recebe o total de bytes, então quem multiplica é o programador,
+  e não há checagem nem zeragem.
